@@ -8,6 +8,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "migrate:postinstall": "prisma generate",
+    "vercel-build": "prisma generate && prisma migrate deploy && nuxt build",
     "migrate:dev": "bunx prisma migrate dev",
     "migrate:generate": "bunx prisma generate",
     "migrate:studio": "bunx prisma studio",
