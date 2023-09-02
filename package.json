@@ -6,13 +6,18 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "migrate:dev": "bunx prisma migrate dev",
+    "migrate:generate": "bunx prisma generate",
+    "migrate:studio": "bunx prisma studio",
+    "migrate:push": "bunx prisma db push"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "nuxt": "^3.7.0"
   },
   "dependencies": {
+    "@prisma/client": "5.2.0",
     "prisma": "^5.2.0"
   }
 }
